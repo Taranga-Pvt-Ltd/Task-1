@@ -1,0 +1,48 @@
+package com.praveen.assaignments;  				    //my package
+
+import java.util.Scanner;         				   // i imported scanner 
+
+public class Diamond                 				  //diamond class
+{
+    public static void main(String[] args)
+    {
+        System.out.print("\n \tEnter no of stars : ");           //giving inputs i.e number of stars
+        
+        Scanner praveen = new Scanner(System.in);		// constructor using new 
+        
+                int num=praveen.nextInt();
+                						//first half  part of  diaond shape-triangle
+
+
+         
+                for(int i=1;i<=num;i++)
+                {
+                    for(int j=num;j>=i;j--)
+                    {
+                        System.out.print(" ");
+                    }
+                   for(int m=1;m<=i;m++)
+                    {
+                       System.out.print(" * "); 
+                    }
+                     System.out.print("\n");
+                }    
+
+                						// second half part of diamond shape-reverse triangle
+
+                
+                 for(int i=1;i<=num;i++)
+                {
+                    for(int j=1;j<=i;j++)
+                    {
+                        System.out.print(" ");
+                    }
+                   for(int m=num;m>=i;m--)
+                    {
+                       System.out.print(" * "); 
+                    }
+                     System.out.print("\n");
+                }    
+    }
+    
+}
